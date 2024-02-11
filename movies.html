@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="movie.css">
+    <title>THEFLIX</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">THEFLIX</div>
+        <div class="search">
+            <input type="text">
+        <button class="search-btn">Search</button>
+
+        </div>
+            <ul>
+                <li ><a href="#" class="buy">BUY NOW</a></li>
+                <li><a href="#"  class="sign">SIGN IN</a></li>
+            </ul>
+    </nav>
+    <section>
+        <div class="content">
+            <div class="column">
+                <img id="movieposter" src="https://image.tmdb.org/t/p/w500//rNzQyW4f8B8cQeg7Dgj3n6eT5k9.jpg" draggable="false">
+                 <button><i class="fa fa-play"></i>Watch Now</button>
+            </div>  
+           
+            <div class="movieinfo">
+                <h1>Movie: <span id="nameofmovie">The Notebook</span></h1>
+                <button><i class="fa fa-video-camera"></i>Trailer</button>
+                <button>HD</button>
+                <h3>IMDB:<span id="imdb">7.9</span></h3>
+            <h3 class="discription">Movie Description:<span id="moviedescription"> epic love story centered around an older man who reads aloud to a woman with Alzheimer's. From a faded notebook, the old man's words bring to life the story about a couple who is separated by World War II, and is then passionately reunited, seven years later, after they have taken different paths.</span></h3>
+            <h3>Release Date: <span id="date">2004-06-25</span></h3>
+            </div>
+        </div>
+
+    </section>
+</body>
+<script src="movie.js"></script>
+</html>
