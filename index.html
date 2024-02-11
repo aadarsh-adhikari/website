@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-800 font-mono">
+  <header class="bg-white font-serif text-xl">
+    <nav class="flex justify-between items-center w-[92%] mx-auto h-[65px]">
+      <div
+        class="logo text-3xl select-none font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-yellow-500 to-pink-500 ">
+        Aadarsh Adhikari
+      </div>
+      <div
+        class="nav-links  duration-[0.8s]  md:static absolute bg-blue-500 justify-center md:bg-white left-0 top-[-100%] md:w-auto w-full md:h-fit h-[60vh] flex items-center px-5 ">
+        <ul class=" flex md:flex-row flex-col md:items-center gap-7 ">
+          <li class="hover:scale-110 hover:text-orange-300 cursor-pointer transition duration-300 " onclick="schome()">
+            Home</li>
+          <li class="hover:scale-110 hover:text-orange-300  cursor-pointer transition duration-300"
+            onclick="scproject()">Projects</li>
+        </ul>
+      </div>
+      <div class=" md:hidden cursor-pointer">
+        <i onclick="change(this)" style="font-size:30px" class="fa fa-bars" id="menu"></i>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="m-5">
+    <div class="flex md:flex-row flex-col items-center justify-between text-white">
+      <div class="m-auto order-2 md:order-1">
+        <h1 class="text-4xl"> Myself <span class="text-orange-300">Aadarsh </span>Adhikari </h1>
+        <p>Currently stuiding BCA at Mechi Multiple Campu(MMC)</p>
+      </div>
+      <div class="order-1 md:order-2">
+        <img src="photo.png" class="w-[400px]" draggable=false>
+      </div>
+    </div>
+    <Section>
+      <div class="border-t-2 border-dotted border-orange-800 p-4" id="Project"></div>
+      <div>
+        <h1 class="text-center font-bold text-3xl text-orange-300 "> Browse my Projects</h1>
+      </div>
+      <div class="flex justify-center flex-row flex-wrap m-4">
+        <div
+          class="border-2  border-orange-100 hover:border-orange-300 rounded-xl hover:rounded-none w-[340px] h-[340px] flex items-center flex-col m-3 p-3 ">
+          <p class="text-orange-400 text-2xl">Disscuss</p>
+          <img src="edisscuss.png" alt="edisscuss" draggable="false" class="mt-2">
+          <a href="https://edisscuss.000webhostapp.com/"
+            class="transition ease-in-out delay-150 p-[5px] mt-3 rounded-full bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+            target="_blank">Visit Now</a>
+          <p class="text-red-800 font-bold text-[18px]">Note:(Right-click and select "Open link in incognito window" for
+            security reasons:)</p>
+        </div>
+        <div
+          class="border-2  border-orange-100 hover:border-orange-300 rounded-xl hover:rounded-none w-[340px] h-[340px] flex items-center flex-col m-3 p-3">
+          <p class="text-orange-400 text-2xl">Amptales</p>
+          <img src="amptales.png" alt="amptales" draggable="false" class="mt-2">
+          <a href="https://amptales.com/"
+            class="transition ease-in-out delay-150 p-[5px] mt-3 rounded-full bg-blue-500  hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+            target="_blank">Visit Now</a>
+        </div>
+        <div
+          class="border-2 border-orange-100 hover:border-orange-300 rounded-xl hover:rounded-none w-[340px] h-[340px] flex items-center flex-col m-3 p-3">
+          <p class="text-orange-400 text-2xl">Theflix</p>
+          <img src="theflix.png" alt="theflix" draggable="false" class="mt-2">
+          <a href="https://aadarshadhikari.com.np/movies.html"
+            class="transition ease-in-out delay-150 p-[5px] mt-3 rounded-full bg-blue-500  hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+            target="_blank">Visit Now</a>
+
+        </div>
+      </div>
+
+    </Section>
+    <footer class="border-t-2 border-dotted border-orange-800 p-4">
+      <h1 class="text-center font-bold text-3xl text-orange-300 "> Follow me?:</h1>
+      <div class="text-3xl text-orange-400 text-center mt-6 ">
+        <a href="https://www.facebook.com/aadarsh.adhikari.188/" class="hover:text-gray-200"><i
+            class="fa fa-facebook"></i></a>
+        <a href="https://github.com/aadarsh-adhikari" class="hover:text-gray-200"><i class="fa fa-github"></i></a>
+        <a href="https://twitter.com/AadarshAdhika13" class="hover:text-gray-200"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/adhikari_aadarsh/" class="hover:text-gray-200"><i
+            class="fa fa-instagram"></i></a>
+
+      </div>
+
+    </footer>
+  </div>
+
+</body>
+<script>
+  function change(x) {
+    const menu = document.querySelector('.nav-links')
+    x.classList.toggle("fa-bars");
+    x.classList.toggle("fa-close");
+    menu.style.top = menu.style.top === '9%' ? '-100%' : '9%';
+  }
+  function scproject() {
+    document.getElementById('Project').scrollIntoView();
+  }
+
+
+</script>
+
+</html>
